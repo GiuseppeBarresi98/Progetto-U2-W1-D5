@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
 header {
   position: sticky;
   top: 0;
@@ -281,4 +285,30 @@ a {
   padding: 20px;
   text-decoration: none;
   color: grey;
+}
+
+.color-nav {
+  animation: addcolor 300ms linear forwards;
+}
+
+.button-color {
+  animation: buttoncolor 300ms linear forwards;
+}
+
+@keyframes addcolor {
+  from {
+    background-color: #ffc017;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+@keyframes buttoncolor {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: green;
+  }
 }
